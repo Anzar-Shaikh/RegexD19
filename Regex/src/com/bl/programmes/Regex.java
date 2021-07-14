@@ -17,15 +17,15 @@ class UserRegistration{
         }
 
     }
-    public void LastName(){
+    public void lastName(){
         sc = new Scanner(System.in);
-        System.out.print("Enter LAst Name :: " );
+        System.out.print("Enter Last Name :: " );
         String LastName = sc.next();
         Boolean answer = Pattern.matches("[A-Z][a-z]{2,}",LastName);
         if (answer){
             System.out.println("thank you");
         } else {
-            System.out.println("please enter valid first name ");
+            System.out.println("please enter valid last name ");
         }
 
     }
@@ -37,7 +37,7 @@ class UserRegistration{
         if (answer){
             System.out.println("thank you");
         } else {
-            System.out.println("please enter valid first name ");
+            System.out.println("please enter valid email ID ");
         }
 
     }
@@ -63,7 +63,7 @@ class UserRegistration{
         if (answer){
             System.out.println("Thank you");
         }else {
-            System.out.println("enter valid contact number");
+            System.out.println("enter valid password");
         }
 
     }
@@ -119,7 +119,7 @@ class UserRegistration{
         }
     }
     public void emailValidation(){
-
+        // this is code for question 2 which satisfies for all emails given to check.
             sc = new Scanner(System.in);
             System.out.print("Enter email ID :: " );
             String Email = sc.next();
@@ -137,13 +137,14 @@ public class Regex {
     public static void main(String[] args) {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.firstName();
-        userRegistration.LastName();
+        userRegistration.lastName();
         userRegistration.email();
         userRegistration.contactNumber();
         userRegistration.password1();
         userRegistration.password2();
         userRegistration.password3();
         userRegistration.password4();
+        userRegistration.password5();
         userRegistration.emailValidation();
     }
 }
