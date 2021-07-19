@@ -9,7 +9,7 @@ class UserRegistration{
         sc = new Scanner(System.in);
         System.out.print("Enter First Name :: " );
         String FirstName = sc.next();
-        boolean answer = Pattern.matches("[A-Z][a-z]{2,}",FirstName);
+        boolean answer = Pattern.matches("([A-Z]*[a-z]*){2,}",FirstName);
         if (answer){
             System.out.println("thank you");
         } else {
@@ -21,7 +21,7 @@ class UserRegistration{
         sc = new Scanner(System.in);
         System.out.print("Enter Last Name :: " );
         String LastName = sc.next();
-        Boolean answer = Pattern.matches("[A-Z][a-z]{2,}",LastName);
+        Boolean answer = Pattern.matches("([A-Z]*[a-z]*){2,}",LastName);
         if (answer){
             System.out.println("thank you");
         } else {
